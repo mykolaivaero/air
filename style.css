@@ -235,6 +235,7 @@ body {
 .online-tablo-tabs-day {
   margin-left: 25px;
   padding-top: 5px;
+  width: 500px;
 }
 
 .online-tablo-tab-day {
@@ -249,6 +250,69 @@ body {
   background-color: #feec01;
 }
 
+.online-tablo-select {
+  width: 590px;
+  height: 50px;
+  float: right;
+  background-color: #feec01;
+  margin-right: 35px;
+  margin-top: 20px;
+  border-radius: 20px;
+  position: relative;
+  font-family: URWGothicL;
+}
+
+.online-tablo-select-bg {
+  content: ' ';
+  display: block;
+  width: 50%;
+  height: 46px;
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 20px;
+  z-index: 0;
+  transition: all .3s;
+}
+
+.online-tablo-select input[type="radio"]:checked+label:nth-of-type(n)+.online-tablo-select-bg {
+  -webkit-transform: translateX(99%);
+  -moz-transform: translateX(99%);
+  -ms-transform: translateX(99%);
+  -o-transform: translateX(99%);
+  transform: translateX(99%);
+}
+
+
+.online-tablo-select .up,
+.online-tablo-select .down {
+  text-transform: uppercase;
+  width: 43%;
+  display: inline-block;
+  line-height: 48px;
+  padding-left: 5%;
+  z-index: 1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 90%;
+  cursor: pointer;
+}
+
+.online-tablo-select .up {
+  float: right;
+  background-image: url('/img/plane-up.png');
+}
+
+.online-tablo-select .down {
+  float: left;
+  background-image: url('/img/plane-down.png');
+}
+
+.online-tablo-select input {
+  display: none;
+}
 
 .online-tablo-table {
   width: 100%;

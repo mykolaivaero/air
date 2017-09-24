@@ -71,13 +71,19 @@
     <div class="online-tablo">
       <div class="online-tablo-tab">ОНЛАЙН ТАБЛО</div>
       <div class="online-tablo-content">
-        <div class="online-tablo-tabs-day clear">
-          <div class="online-tablo-tab-day active">Сьогодні </br> 09.06.2017 </div>
-          <div class="online-tablo-tab-day">Завтра </br> 10.06.2017 </div>
-          <div class="online-tablo-tab-day">Післязавтра </br> 11.06.2017</div>
-        </div>
-        <div class="online-tablo-select">
-
+        <div class="clear">
+          <div class="online-tablo-tabs-day">
+            <div class="online-tablo-tab-day active">Сьогодні </br> 09.06.2017 </div>
+            <div class="online-tablo-tab-day">Завтра </br> 10.06.2017 </div>
+            <div class="online-tablo-tab-day">Післязавтра </br> 11.06.2017</div>
+          </div>
+          <div class="online-tablo-select">
+            <input type="radio" id="direction_down" name="direction" value="down">
+            <label class="down" for="direction_down">ПРИЛіТ</label>
+            <input type="radio" id="direction_up" name="direction" value="up">
+            <label class="up" for="direction_up">відліт</label>
+            <span class="online-tablo-select-bg"></span>
+          </div>
         </div>
         <table class="online-tablo-table">
           <thead>
