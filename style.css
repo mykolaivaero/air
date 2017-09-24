@@ -11,7 +11,7 @@
 
 body {
   background-image: url('/img/page-background.jpg');
-  background-color: #105394;
+  background-color: #b3c8e3;;
   background-size: cover;
   min-width: 1330px;
   font-family: Verdana;
@@ -157,6 +157,7 @@ body {
   text-align: center;
   background-color: #feec01;
   border-radius: 0 0 10px 10px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
   margin-top: -5px;
 }
 
@@ -165,11 +166,11 @@ body {
 }
 
 .nav > li > ul > li {
-  border-bottom: 1px dashed black;
+  border-bottom: 0px solid black;
 }
 
 .nav > li > ul > li:first-child {
-  border-top: 1px dashed black;
+  border-top: 0px solid black;
 }
 
 .nav > li > ul > li:last-child {
