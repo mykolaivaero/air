@@ -273,7 +273,7 @@ body {
   left: 2px;
   border-radius: 20px;
   z-index: 0;
-  transition: all .3s;
+  transition: transform .3s;
 }
 
 .online-tablo-select input[type="radio"]:checked+label:nth-of-type(n)+.online-tablo-select-bg {
