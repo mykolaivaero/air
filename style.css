@@ -327,3 +327,19 @@ body {
   color: #fff;
   margin-top: 15px;
 }
+
+.footer-mail {
+  float: right;
+  background-image: url('/img/icon-mail.png');
+  background-repeat: no-repeat;
+  margin-right: 25px;
+}
+
+.footer-mail a {
+  font-family: URWGothicL;
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 85px;
+  color: #fff;
+  margin-left: 95px;
+}
