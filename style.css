@@ -205,11 +205,7 @@ body {
 .navigation {
   background-color: #fff;
   height: 45px;
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
-
-.online-tablo {
+  margin-bottom: 70px;
   margin-top: 50px;
 }
 
@@ -226,7 +222,7 @@ body {
   color: #fff;
   line-height: 60px;
   border-radius: 10px 10px 0 0;
-  width: 155px;
+  display: inline-block;
   text-align: center;
   padding: 0 20px;
   margin-left: 25px;
@@ -406,4 +402,27 @@ body {
   line-height: 85px;
   color: #fff;
   margin-left: 95px;
+}
+
+.content-wraper {
+
+}
+
+.content-title  {
+  display: inline-block;
+  margin-left: 25px;
+  line-height: 60px;
+  background-color: #004f92;
+  padding: 0 20px;
+  border-radius: 10px 10px 0 0;
+  font-family: URWGothicL;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 20px;
+  border-radius: 10px;
 }
