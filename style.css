@@ -99,51 +99,96 @@ body {
   color: grey;
 }
 
-.nav li {
-  display: inline-block;
-  margin: 0 40px;
-  font-size: 14px;
-}
-
-.nav li a {
+.nav > li {
   top: -10px;
   font-family: URWGothicL;
+  font-size: 14px;
+  margin: 0 40px;
   margin-bottom: -25px;
   display: inline-block;
   position: relative;
-  line-height: 65px;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
-  padding: 0 20px;
   padding-bottom: 5px;
   border-radius: 0 0 10px 10px;
 }
 
-.nav li a:hover,
-.nav li a.active {
+.nav > li a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 65px;
+}
+
+.nav > li:hover,
+.nav > li.active {
   background-color: #feec01;
   box-shadow: 0 3px 5px rgba(0,0,0,0.5);
 }
 
-.nav li a:hover::after,
-.nav li a.active::after {
+.nav > li:hover::after,
+.nav > li.active::after {
   content: ' ';
   position: absolute;
   border: 5px solid transparent;
   border-bottom: 5px solid #eab431;
   border-left: 5px solid #eab431;
   right: -10px;
+  top: 0;
 }
 
-.nav li a:hover::before,
-.nav li a.active::before {
+.nav > li:hover::before,
+.nav > li.active::before {
   content: ' ';
   position: absolute;
   border: 5px solid transparent;
   border-bottom: 5px solid #eab431;
   border-right: 5px solid #eab431;
   left: -10px;
+}
+
+.nav li > ul {
+  display: none;
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background-color: #feec01;
+  border-radius: 0 0 10px 10px;
+  margin-top: -5px;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav > li > ul > li {
+  border-bottom: 1px dashed black;
+}
+
+.nav > li > ul > li:first-child {
+  border-top: 1px dashed black;
+}
+
+.nav > li > ul > li:last-child {
+  border: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.nav > li > ul > li > a {
+  line-height: 45px;
+  padding: 0;
+  width: 100%;
+}
+
+.nav > li > ul > li:hover {
+  background-color: #004f92;
+}
+
+.nav > li > ul > li:hover > a {
+  color: white;
 }
 
 .navigation::after {
@@ -180,7 +225,8 @@ body {
   color: #fff;
   line-height: 60px;
   border-radius: 10px 10px 0 0;
-  width: fit-content;
+  width: 155px;
+  text-align: center;
   padding: 0 20px;
   margin-left: 25px;
 }
