@@ -1,6 +1,6 @@
 @font-face {
   font-family: URWGothicL;
-  src: url(font/9845.ttf);
+  src: url('./font/9845.ttf');
 }
 
 
@@ -10,17 +10,12 @@
 }
 
 body {
-  background-image: url('/img/page-background.jpg');
-  background-color: #b3c8e3;;
-  background-size: cover;
+  background-image: url('./img/page-background.jpg');
+  background-color: #023da1;
+  background-position-x: center;
+  background-repeat: no-repeat;
   min-width: 1330px;
   font-family: Verdana;
-}
-
-@media screen and (max-width: 1330px) {
-  body {
-    background-size: auto;
-  }
 }
 
 .site-name {
@@ -194,7 +189,7 @@ body {
 
 .navigation::after {
   content: '';
-  background-image: url(/img/shadow-menu.png);
+  background-image: url('./img/shadow-menu.png');
   height: 15px;
   display: block;
   margin-top: -16px;
@@ -203,14 +198,14 @@ body {
   background-color: transparent;
 }
 .navigation {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
   height: 45px;
   margin-bottom: 70px;
   margin-top: 50px;
 }
 
 .online-tablo-content {
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   padding-bottom: 20px;
 }
@@ -298,12 +293,12 @@ body {
 
 .online-tablo-select .up {
   float: right;
-  background-image: url('/img/plane-up.png');
+  background-image: url('./img/plane-up.png');
 }
 
 .online-tablo-select .down {
   float: left;
-  background-image: url('/img/plane-down.png');
+  background-image: url('./img/plane-down.png');
 }
 
 .online-tablo-select input {
@@ -358,12 +353,12 @@ body {
 }
 
 .footer-address {
-  background-image: url('/img/icon-map-plus.png');
+  background-image: url('./img/icon-map-plus.png');
   margin-left: 25px;
 }
 
 .footer-phone {
-  background-image: url('/img/icon-old-phone-plus.png');
+  background-image: url('./img/icon-old-phone-plus.png');
 }
 
 .footer-address-title,
@@ -390,7 +385,7 @@ body {
 
 .footer-mail {
   float: right;
-  background-image: url('/img/icon-mail.png');
+  background-image: url('./img/icon-mail.png');
   background-repeat: no-repeat;
   margin-right: 25px;
 }
@@ -422,7 +417,7 @@ body {
 }
 
 .content {
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
 }
